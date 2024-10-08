@@ -12,6 +12,10 @@ body {
   padding: 0;
   margin: 0;
   padding: 1rem;
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
 }
 
 :root {
@@ -77,4 +81,74 @@ nav a:hover {
   width: 30px;
   background-color: var(--teal);
   border-radius: 50%;
+}
+
+main {
+  display: flex;
+}
+
+.left-section {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5rem 0 0 2rem;
+  margin-left: 4.03rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.left-section h1 {
+  font-weight: 800;
+  font-size: 104px;
+  margin: 0;
+}
+
+.left-section h1 span {
+  display: block;
+  color: var(--teal);
+  line-height: 86%;
+}
+
+.left-section p {
+  color: #2dcdb6;
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0;
+}
+
+.left-section h2 {
+  font-weight: 300;
+  font-size: 20px;
+  margin: 0;
+}
+.ig-icon {
+  border-radius: 20%;
+
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-brands {
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.right-section {
+  flex-basis: 50%;
 }
