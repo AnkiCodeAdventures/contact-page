@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
-      rel="stylesheet"
-    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link href="/styles.css" rel="stylesheet" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Contact Page</title>
   </head>
   <body>
@@ -55,7 +55,80 @@
           </div>
         </div>
       </section>
-      <section class="right-section"></section>
+      <section class="right-section">
+        <form id="contact-form">
+          <div class="first-name-wrapper">
+            <label for="fname"> First Name<span>*</span> </label><br />
+            <input type="text" id="fname" name="fname" required />
+            <br />
+          </div>
+          <div class="last-name-wrapper">
+            <label for="lname"> Last Name<span>*</span></label> <br />
+            <input type="text" id="lname" name="lname" required />
+            <br />
+          </div>
+          <div class="company-name-wrapper">
+            <label for="company-name"> Company Name </label> <br />
+            <input type="text" id="company-name" name="company-name" />
+            <br />
+          </div>
+          <div class="email-wrapper">
+            <label for="email"> Email<span>*</span></label> <br />
+            <input type="email" id="email" name="email" required />
+            <br />
+          </div>
+          <div class="comments-wrapper">
+            <label> Comments </label> <br />
+            <textarea id="comments" name="comments" rows="2"></textarea>
+          </div>
+          <div>
+            <p class="text">
+              We are committed to protecting and respecting your privacy, and
+              we’ll only use your personal information to distribute marketing
+              communications regarding our products and services. Please check
+              below to opt-in to email communications.
+            </p>
+          </div>
+          <div class="marketing-permission-wrapper checkbox">
+            <input
+              type="checkbox"
+              id="marketing-permission"
+              name="marketing-permission"
+              value="marketing-permission"
+              required
+            />
+            <label for="marketing-permission"
+              ><p class="text">
+                I agree to receive marketing communications from Ankita
+              </p></label
+            ><br />
+          </div>
+          <div>
+            <p class="text">
+              I agree that Ankita can securely store the non-personal
+              identifiers (name, email, and phone number) I provided in this
+              form for the purpose of receiving company updates via email.
+            </p>
+          </div>
+          <div class="storage-permission-wrapper checkbox">
+            <input
+              type="checkbox"
+              id="storage-permission"
+              name="storage-permission"
+              value="storage-permission"
+              required
+            />
+            <label for="storage-permission"
+              ><p class="text">
+                I agree that Ankita may store my contact information
+              </p> </label
+            ><br />
+          </div>
+          <div>
+            <button>Learn More</button>
+          </div>
+        </form>
+      </section>
     </main>
   </body>
 </html>
